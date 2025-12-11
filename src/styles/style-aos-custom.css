@@ -1,0 +1,82 @@
+/* RESET: before animation */
+[data-aos]:not(.aos-animate) {
+  opacity: 0 !important;
+  transform: translateY(40px) !important;
+}
+
+/* BASE ANIMATION */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 900ms;
+  transition-timing-function: ease-out;
+  will-change: opacity, transform;
+}
+
+/* ANIMATE STATE */
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+/* Fade Up */
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+/* Fade Down */
+[data-aos="fade-down"] {
+  transform: translateY(-50px);
+}
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+}
+
+/* Fade Left */
+[data-aos="fade-left"] {
+  transform: translateX(60px);
+}
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+/* Fade Right */
+[data-aos="fade-right"] {
+  transform: translateX(-60px);
+}
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+/* Zoom In */
+[data-aos="zoom-in"] {
+  transform: scale(0.85);
+}
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Slide Up */
+[data-aos="slide-up"] {
+  transform: translateY(80px);
+  opacity: 0;
+}
+[data-aos="slide-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Slow Fade */
+[data-aos="fade-slow"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-duration: 1400ms;
+}
+[data-aos="fade-slow"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

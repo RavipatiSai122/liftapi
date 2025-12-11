@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter bg-warmCream text-darkText;
+  line-height: 1.6;
+}
+
+/* Improve usability for all buttons globally */
+button {
+  @apply transition-all duration-300;
+}
+
+/* Smooth hover for links */
+a {
+  @apply transition-colors duration-300;
+}
